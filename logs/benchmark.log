@@ -1,0 +1,13 @@
+/usr/local/lib/python3.13/dist-packages/torch/jit/_serialization.py:176: FutureWarning: `torch.jit.load` is deprecated. Please switch to `torch.export`.
+  warnings.warn(
+[W1114 16:44:39.131266456 Quantizer.cpp:111] Warning: torch.quantize_per_tensor, torch.quantize_per_channel and other quantized tensor creation functions that produce tensors with dtype torch.quint8, torch.qint8, and torch.qint32 are deprecated and will be removed in a future PyTorch release. Please see https://github.com/pytorch/pytorch/issues/184982 for more information. (function operator())
+fp32               acc  93.87%  lat 18.86 ms  size 44.77 MB
+ptq                acc  93.90%  lat 12.42 ms  size 11.42 MB
+qat                acc  93.98%  lat 12.54 ms  size 11.42 MB
+unstructured       acc  94.07%  lat 19.19 ms  size 44.78 MB
+structured         acc  93.78%  lat 16.45 ms  size 22.79 MB
+fp32_onnx          acc  93.87%  lat 14.78 ms  size 44.69 MB
+unstructured_onnx  acc  94.07%  lat 12.30 ms  size 44.69 MB
+structured_onnx    acc  93.78%  lat 5.95 ms  size 22.71 MB
+fp32_onnx_int8     acc  93.68%  lat 7.42 ms  size 11.23 MB
+wrote results/benchmark_results.csv and results/predictions.csv
